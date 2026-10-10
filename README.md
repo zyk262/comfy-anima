@@ -4,6 +4,27 @@
 
 ![鹈鹕骑自行车的动画预览](docs/pelican-preview.png)
 
+## 在线观看
+
+打开 [鹈鹕骑自行车动画](https://zyk262.github.io/pelican-riding-a-bicycle/)，即可自动循环播放 3D 动画。支持暂停、拖动进度和全屏观看。
+
+网页使用 `@remotion/player` 播放同一份动画源码，无需先导出 MP4。
+
+### GitHub Pages 部署
+
+在仓库 **Settings → Pages → Build and deployment → Source** 中选择 **GitHub Actions**。
+推送到 `main` 后，`.github/workflows/pages.yml` 自动安装依赖、检查代码、构建并部署网页。
+可在 **Actions → Deploy animation to GitHub Pages** 查看状态或手动运行。
+
+本地网页预览：
+
+```sh
+npm run dev:site
+```
+
+按终端显示的地址访问 `/pelican-riding-a-bicycle/`。
+`npm run build:site` 将网页构建到 `dist/`，`npm run preview:site` 可预览构建结果。
+
 ## 动画内容
 
 - 1920 × 1080，30 fps，12 秒，无声动画。

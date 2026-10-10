@@ -11,6 +11,7 @@
   "dependencies": {
     "@react-three/fiber": "9.2.0",
     "@remotion/cli": "4.0.534",
+    "@remotion/player": "4.0.534",
     "@remotion/three": "4.0.534",
     "react": "19.2.3",
     "react-dom": "19.2.3",
@@ -20,17 +21,22 @@
   "devDependencies": {
     "@remotion/eslint-config-flat": "4.0.534",
     "@types/react": "19.2.7",
+    "@types/react-dom": "19.2.7",
     "@types/three": "0.178.1",
     "@types/web": "0.0.166",
     "eslint": "9.39.5",
     "prettier": "3.8.1",
-    "typescript": "5.9.3"
+    "typescript": "5.9.3",
+    "vite": "7.3.1"
   },
   "scripts": {
     "dev": "remotion studio --no-open",
     "build": "remotion bundle",
+    "dev:site": "vite --host 127.0.0.1",
+    "build:site": "vite build",
+    "preview:site": "vite preview --host 127.0.0.1",
     "upgrade": "remotion upgrade",
-    "lint": "eslint src && tsc",
+    "lint": "eslint src site && tsc",
     "render": "remotion render src/index.ts PelicanRide out/pelican-ride.mp4 --gl=angle --codec=h264"
   }
 }

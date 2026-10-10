@@ -1,0 +1,25 @@
+:root {
+  font-family: "Segoe UI", "Microsoft YaHei", sans-serif;
+  color: #28544d;
+  background: #e7efe9;
+  font-synthesis: none;
+}
+* { box-sizing: border-box; }
+body { margin: 0; }
+main { width: min(1280px, calc(100% - 48px)); margin: 0 auto; padding: 44px 0 26px; }
+header { margin-bottom: 26px; }
+.eyebrow { font-size: 11px; letter-spacing: 4px; margin: 0 0 16px; }
+h1 { font-size: clamp(28px, 4vw, 46px); font-weight: 600; letter-spacing: -1px; margin: 0 0 12px; }
+.intro { color: #53736a; font-size: 15px; margin: 0; }
+.player { overflow: hidden; border-radius: 20px; background: #e7efe9; box-shadow: 0 16px 55px #28544d20; }
+.status { display: grid; place-items: center; width: 100%; height: 100%; background: #e7efe9; color: #28544d; padding: 20px; text-align: center; }
+footer { display: flex; justify-content: space-between; gap: 18px; color: #53736a; font-size: 12px; line-height: 1.6; margin-top: 22px; }
+a { color: #28544d; white-space: nowrap; text-decoration: none; }
+a:hover { text-decoration: underline; }
+a:focus-visible { outline: 2px solid #28544d; outline-offset: 4px; }
+@media (max-width: 600px) {
+  main { width: calc(100% - 24px); padding-top: 28px; }
+  .player { border-radius: 12px; }
+  .eyebrow { letter-spacing: 2px; }
+  footer { font-size: 11px; }
+}
