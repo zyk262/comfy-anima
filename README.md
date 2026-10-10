@@ -20,8 +20,8 @@
 需要 Node.js 22 或更高版本、npm 和 Git。
 
 ```sh
-git clone https://github.com/zyk262/comfy-anima.git
-cd comfy-anima
+git clone https://github.com/zyk262/pelican-riding-a-bicycle.git
+cd pelican-riding-a-bicycle
 npm ci
 npm run dev
 ```
